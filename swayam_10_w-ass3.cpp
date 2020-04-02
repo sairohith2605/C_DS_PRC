@@ -20,7 +20,8 @@ public:
   // return a reference to the ith element of the array
   void push_back (int v)
   {
-    int *temp = new int[capacity + 1];
+     capacity++;
+    int *temp = new int[capacity];
     capacity++;
     int i;
     for (i = 0; i < capacity - 1; i++)
